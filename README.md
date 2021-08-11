@@ -2,7 +2,7 @@
 
 para ver el reporte de analisis de codigo:
 
-https://github.com/ggavinowich/code_breaker/overview.html#
+https://ggavinowich.github.io/code_breaker/overview.html#
 
 
 ### Para el setup sin docker:
