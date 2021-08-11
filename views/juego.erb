@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+</head>
+<body>
+    <h1 id="accion">Ingrese su numero</h1>
+    <% num= @guesses_controller.length-1
+    @guesses_controller.each_with_index do |m,i|%>
+    <div id="guess<%=num-i%>"><%=m%></div>
+    <%end%>
+    <form action="/jugar" method="post">
+        <input type="text" name="user_guess_name" id="user_guess_id"/>
+        <input type="submit" value="¡Arriegar!"/>
+    </form>
+    <form action="/reiniciar" method="post">
+        <input type="submit" value="Reiniciar"/>
+    </form>
+</body>
+</html>
